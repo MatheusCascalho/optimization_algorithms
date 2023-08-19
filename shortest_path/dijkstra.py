@@ -37,10 +37,10 @@ if __name__=="__main__":
     inf = float('inf')
     distance_matrix = [
         [inf, 2, inf, inf, 3],     # a->b, a->e
-        [2, inf, 3, inf, 4],        # b->a, b->c, b->e
+        [2, inf, 3, inf, 4],       # b->a, b->c, b->e
         [inf, 3, inf, 5, inf],     # c->b, c->d
         [inf, inf, inf, 5, 3],     # c->d, d-> e
-        [3, 4, inf, 3, inf],        # a->b, a->e
+        [3, 4, inf, 3, inf],       # a->b, a->e
     ]
     starting_node = 0
     shortest_path_length, pred = dijkstra(number_of_cities, distance_matrix, starting_node)
